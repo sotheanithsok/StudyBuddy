@@ -14,6 +14,7 @@ import { EventCardComponent } from '../../components/event-card/event-card.compo
 import { FooterComponent } from '../../components/footer/footer.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TopPanelComponent } from '../../components/top-panel/top-panel.component'
+import {NgbDatepickerModule} from "@ng-bootstrap/ng-bootstrap"
 
 @NgModule({
   declarations: [MainComponent, EventDetailComponent, NavigationBarComponent, FilterBarComponent, EventsListComponent, EventFormComponent, FooterComponent, TopPanelComponent, EventCardComponent],
@@ -22,7 +23,9 @@ import { TopPanelComponent } from '../../components/top-panel/top-panel.componen
     CommonModule,
     MainRoutingModule,
     NgbModalModule,
-    NgbModule
+    NgbModule,
+    NgbDatepickerModule,
+
 
   ]
 })
