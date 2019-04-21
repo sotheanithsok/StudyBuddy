@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-events-list',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./events-list.component.css']
 })
 export class EventsListComponent implements OnInit {
-  constructor() { }
+  closeResult: string;
+  constructor() {
+  }
+
 
   ngOnInit() {
   }

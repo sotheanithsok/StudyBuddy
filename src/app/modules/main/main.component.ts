@@ -12,4 +12,8 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
+  startSearch(searchValue:String){
+    console.log("Main is starting to search for "+searchValue)
+  }
+
 }

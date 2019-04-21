@@ -1,2 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+
+.navbar {
+    height : 100px   !important;
+}
+
+
+span#title {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+
+.nav-item {
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.bt-lg {
+    width : 100px;
+}
+
+
+.custom-footer {
+    height : 6rem;
+    background-color: #373f46 !important;
+    font-size: 1rem;
+    position : fixed;
+    bottom : 0;
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    padding : 2rem;
+}
+
+
+/*
+.custom-footer { 
+    height : 5em;
+    width : 100%;
+    background-color : #373f46 !important;
+    position : fixed;
+    bottom :0px;
+}
+
+*/
+
+span#footer-text {
+    text-align: center;
+    align-content: center;
+    color : white;
+    padding-top: 5em;
+    padding-left : 50em;
+}
+

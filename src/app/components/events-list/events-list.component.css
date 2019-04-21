@@ -1,0 +1,14 @@
+
+.card-columns
+{
+  scroll-margin-block-start: 0;
+  display: flex;
+  overflow-x: auto;
+
+}
+
+
+::-webkit-scrollbar {
+  display:none;
+}
+

@@ -1,0 +1,23 @@
+.btn-gold {
+    background-color: #ecaa00;
+}
+.btn-gold:hover {
+    background-color: #EA9000;
+}
+
+.text-gold {
+    color: #ecaa00;
+}
+.text-gold:hover {
+    color: #EA9000;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    color: #ecaa00;
+}
+
+.logo:hover {
+    color: #EA9000;
+}
