@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-event-form',
   templateUrl: './event-form.component.html',
-  styleUrls: ['./event-form.component.css']
+  styleUrls: ['./event-form.component.css'],
+  // selector:'ngbd-datepicker-popup',
+  // templateUrl:'./datepicker-popup.html'
 })
-export class EventFormComponent implements OnInit {
+// export class NgbDatepickerPopup{
+//   model;
 
-  constructor() { }
+export class EventFormComponent implements OnInit {
+  closeResult: string;
+  constructor( ) { }
 
   ngOnInit() {
   }
