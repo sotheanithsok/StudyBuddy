@@ -10,6 +10,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class EventCardComponent implements OnInit {
   @Input() event: Event
+  @Input() image: string
 
   title: string
   date: string
