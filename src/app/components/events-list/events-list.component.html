@@ -6,7 +6,7 @@
   </div>
   <div class="card-columns scrolling-wrapper">
     <div *ngFor="let event of recommendedEvents">
-      <app-event-card [event]="event"></app-event-card>
+      <app-event-card [event]="event" [image]="getRecImage()"></app-event-card>
     </div>
   </div>
 
@@ -20,7 +20,7 @@
     </div>
   <div class="card-columns scrolling-wrapper">
     <div *ngFor="let event of happeningSoonEvents">
-      <app-event-card [event]="event"></app-event-card>
+      <app-event-card [event]="event" [image]="getHapImage()"></app-event-card>
     </div>
   </div>
 </div>
@@ -32,7 +32,7 @@
     </div>
     <div class="card-columns scrolling-wrapper">
       <div *ngFor="let event of yourMajorEvents">
-        <app-event-card [event]="event"></app-event-card>
+        <app-event-card [event]="event" [image]="getRecImage()"></app-event-card>
       </div>
     </div>
 </div>
