@@ -8,6 +8,9 @@ import { NavigationBarComponent } from '../../components/navigation-bar/navigati
 import { FilterBarComponent } from '../../components/filter-bar/filter-bar.component';
 import { EventsListComponent } from '../../components/events-list/events-list.component';
 import { EventFormComponent } from '../../components/event-form/event-form.component';
+
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { FooterComponent } from '../../components/footer/footer.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
 
@@ -16,9 +19,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
   imports: [
     CommonModule,
     MainRoutingModule,
-    NgbModule
+    NgbModalModule
 
-    
   ]
 })
 export class MainModule { }
