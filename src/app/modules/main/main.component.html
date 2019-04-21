@@ -2,9 +2,11 @@
 
 <app-filter-bar (requestSearch)="startSearch($event)"></app-filter-bar>
 
-<app-event-detail></app-event-detail>
-<app-event-form></app-event-form>
-<app-events-list></app-events-list>
+<app-top-panel></app-top-panel>
 
+<div class="mx-5">
+    <app-events-list class="eventList"></app-events-list>
+
+</div>
 
 <app-footer></app-footer>
