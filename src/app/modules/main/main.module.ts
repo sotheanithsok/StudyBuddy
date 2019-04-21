@@ -9,6 +9,7 @@ import { FilterBarComponent } from '../../components/filter-bar/filter-bar.compo
 import { EventsListComponent } from '../../components/events-list/events-list.component';
 import { EventFormComponent } from '../../components/event-form/event-form.component';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+import { EventCardComponent } from '../../components/event-card/event-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     NavigationBarComponent,
     FilterBarComponent,
     EventsListComponent,
-    EventFormComponent
+    EventFormComponent,
+    EventCardComponent
   ],
   imports: [
     CommonModule,
