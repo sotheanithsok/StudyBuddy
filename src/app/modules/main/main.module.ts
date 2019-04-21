@@ -10,11 +10,19 @@ import { EventsListComponent } from '../../components/events-list/events-list.co
 import { EventFormComponent } from '../../components/event-form/event-form.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 
+import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { FooterComponent } from '../../components/footer/footer.component';
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
+
 @NgModule({
   declarations: [MainComponent, EventDetailComponent, NavigationBarComponent, FilterBarComponent, EventsListComponent, EventFormComponent, FooterComponent],
   imports: [
     CommonModule,
-    MainRoutingModule
+    MainRoutingModule,
+    NgbModalModule,
+    NgbModule
+
   ]
 })
 export class MainModule { }
