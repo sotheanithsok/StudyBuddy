@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 export class HttpService {
   events:Event[]=[];
   constructor() {
-    for(let i =0; i <100;i++){
+    for(let i =0; i <500;i++){
       this.events.push({
         id: Math.floor((Math.random()*999999999)+1).toString(),
         class: courses[Math.floor(Math.random()*courses.length)],
@@ -26,7 +26,6 @@ export class HttpService {
       })
     }
     
-    console.log(this.events)
   }
 
   getPossibleClasses():string[] {
