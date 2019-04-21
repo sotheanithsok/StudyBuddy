@@ -45,7 +45,6 @@ export class FilterBarComponent implements OnInit {
       this.requestSearch.emit(searchValue);
     }
 
-
   }
 
 }

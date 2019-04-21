@@ -10,4 +10,5 @@ export class Event {
     currentCapacity: number
     maxCapacity: number
     organizer: string
+    title:string
 }

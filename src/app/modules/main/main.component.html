@@ -1,13 +1,12 @@
 <app-navigation-bar></app-navigation-bar>
-<!--
-<app-filter-bar (requestSearch)="startSearch($event)"></app-filter-bar>
--->
-<app-top-panel></app-top-panel>
+
+
+
+<app-top-panel (requestSearch)="startSearch($event)"></app-top-panel>
 
 <!-- all components for the body gos in this div -->
 <div class="mx-5">
-    <app-events-list class="eventList"></app-events-list>
-
+  <app-events-list class="eventList"></app-events-list>
 </div>
 
 <app-event-form></app-event-form>
