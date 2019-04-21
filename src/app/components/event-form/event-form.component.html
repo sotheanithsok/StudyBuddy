@@ -1,3 +1,81 @@
 <p>
-  event-form works!
-</p>
+    events-list works!
+  </p>
+  <!--<h1>{{title}}</h1> -->
+  <!--<button class="btn btn-lg btn-outline-primary" (click)="open()">Post Events</button>-->
+  <ng-template #content let-modal>
+  <div class = "modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Please enter the Event Details </h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span></button>
+  </div>
+  <div>
+    <div class=" modal-body">
+      <form>
+          <div class="form-group">
+              <label for="eventName"><b>Event Name</b></label></div>
+              <div class="input-group">
+              <input type="text" placeholder="" name="eventName" required>
+            </div>
+        <div class="form-group">
+          <label for="class"><b>Class</b></label>
+          <div class="input-group">
+          <input type="text" placeholder="" name="Class" required>
+        </div>
+        <div class="form-group">
+          <label for="email"><b>Instructor</b></label>
+        </div>
+        <div class="input-group">
+          <input type="text" placeholder="" name="instructor" required>
+          </div>
+          <label for="duration"><b>Study Duration</b></label>
+          <div class="input-group">
+          <input type="text" placeholder="" name="duration" required>
+          </div>
+          <label for="location"><b>Location</b></label>
+          <div class="input-group">
+          <input type ="text" placeholder="" name="location" required>
+          </div>
+          <label for="topic"><b>Topic</b></label>
+          <div class="input-group">
+          <input type="text" placeholder="" name="topic" required>
+          </div>
+          <label for="date"><b>Date</b></label>
+          <div class="input-group">
+          <input type="text" class="form-control" placeholder="yyyy-mm-dd"  name="dp"  >
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary calendar " (click)="dp.toggle()" type="button"></button>
+            </div>
+          </div>
+          <label for="description"><b>Description</b></label>
+          <div class="input-group">
+          <input type="text" placeholder="" name="description" required>
+          </div>
+          <label for="currentCapacity"><b>CurrentCapacity</b></label>
+          <div class="input-group">
+          <input type="text" placeholder="" name="currentCapacity" required>
+          </div>
+          <label for="maxCapacity"><b>MaxCapacity</b></label>
+          <div class="input-group">
+          <input type="text" placeholder="" name="maxCapacity" required>
+          </div>
+          <label for="organizer"><b>Organizer</b></label>
+          <div class="input-group">
+          <input type="text" placeholder="" name="organizer" required>
+          </div>
+  
+        </div>
+      </form>
+  </div>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">POST</button>
+    </div>
+  </ng-template>
+  
+  <button class="btn btn-lg btn-outline-primary" (click)="open(content)">POST EVENTS</button>
+  
+  <hr>
+  
+ <pre>{{closeResult}}</pre>
+
