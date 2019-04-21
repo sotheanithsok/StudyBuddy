@@ -1,0 +1,33 @@
+footer {
+  background: black;
+  padding:1em;
+  text-align: left;
+}
+footer a {
+  color: white;
+  font-size: 1em;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+}
+footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+footer a:hover {
+  color: #ecaa00;
+}
+
+.text-muted:hover {
+  color: white;
+}
+
+.row
+{
+    
+    width:100%;
+}
+.col
+{
+    
+    color: white;
+}

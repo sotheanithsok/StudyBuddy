@@ -1,9 +1,15 @@
 .jumbotron {
+    background-size: cover;
     border-radius: 0 !important;
+    height: 25rem;
 }
 
 .btn-outline-gold:hover {
     background-color: #ecaa00;
     border-color: transparent;
     color: black;
+}
+
+.text-shadow {
+    text-shadow: 0 0 2px gray;
 }

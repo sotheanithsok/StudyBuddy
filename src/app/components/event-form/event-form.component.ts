@@ -7,13 +7,8 @@ import { Variable, Content } from '@angular/compiler/src/render3/r3_ast';
 @Component({
   selector: 'app-event-form',
   templateUrl: './event-form.component.html',
-  styleUrls: ['./event-form.component.css'],
-  // selector:'ngbd-datepicker-popup',
-  // templateUrl:'./datepicker-popup.html'
+  styleUrls: ['./event-form.component.css']
 })
-
-
-
 
 export class EventFormComponent implements OnInit {
 

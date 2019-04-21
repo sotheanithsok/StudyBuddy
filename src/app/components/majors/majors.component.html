@@ -1,0 +1,16 @@
+<div class="mt-5 mb-3">
+  
+  <div class="mb-2">
+    <h4 class="m-0">Fields of Study</h4>
+    <p class="text-muted m-0">Find a study session by a field of study</p>
+  </div>
+
+  <!-- cards -->
+  <div class="card-deck text-white">
+    <!-- iteratively creating cards for major -->
+    <div *ngFor="let major of majorList; let i = index">
+      <app-major-card [major]="major" [imgFile]="imgFileList[i]"></app-major-card>>
+    </div>
+  </div>
+
+</div>

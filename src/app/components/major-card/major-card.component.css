@@ -1,0 +1,23 @@
+.card {
+    width: 10rem;
+    height: 15rem;
+    margin-right: 0rem;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.triangle-down-left {
+    width: 200px;
+    height: 200px;
+    background: purple;
+
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(0% 50%, 0% 100%, 100% 100%);
+}
+
+
+.text-shadow {
+    text-shadow: 0 0 2px gray;
+}

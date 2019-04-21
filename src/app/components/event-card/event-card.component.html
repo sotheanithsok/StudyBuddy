@@ -1,14 +1,13 @@
-<div class="card mr-3" (click)="open(content)">
+<div class="card mr-3 h-100" (click)="open(content)">
 
   <div>
-    <img src="../../../assets/physics.jpeg" class="card-img-top">
+    <img src="assets/physics.jpg" class="card-img-top">
     <div class="card-body"*ngIf="event">
       <h5 class="card-title m-0" >{{title}} </h5>
       <div class="textComponent">
         <p class="text m-0"> {{date}}</p>
         <p class="text m-0">{{location}}</p>
         <p class="text m-0"> {{class}}</p>
-        <p class="text m-0">{{capacity}}</p>
       </div>
       <footer class="cardFooter"><small class="text-muted">{{lastPosted}}</small></footer>
     </div>
@@ -18,22 +17,22 @@
 
 <ng-template #content let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Event Name</h4>
+    <h4 class="modal-title" id="modal-basic-title">{{event.title}}</h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
-    <p class="m-0">Saturday, Apr 20, 2019, for 2hr</p>
-    <p class="m-0">At Library 5th floor</p>
-    <p class="m-0">Hosted by Sella</p>
-    <p class="m-0">5 people comes</p>
+    <p class="m-0">{{date + " for " + event.duration + " minutes"}}</p>
+    <p class="m-0">{{" At " + event.location}}</p>
+    <p class="m-0">{{"Host by " + event.organizer}}</p>
+    <p class="m-0">{{"Capacity: "+event.currentCapacity + "/" + event.maxCapacity}}</p>
     <p class="m-0 font-weight-bold">Class</p>
-    <p class="m-0">CECS528 Advanced Algorithm</p>
+    <p class="m-0">{{event.class}}</p>
     <p class="m-0 font-weight-bold">Topic</p>
-    <p class="m-0">Algorithm, Turing Reducibility</p>
+    <p class="m-0">{{event.topic}}</p>
     <p class="m-0 font-weight-bold">Details</p>
-    <p class="m-0">Let's hack those algorithms!</p>
+    <p class="m-0">{{event.description}}</p>
   </div>
   <div class="modal-footer">
     <button type="button" ngbAutofocus class="btn btn-outline-dark" (click)="modal.close('Save click')">Join</button>

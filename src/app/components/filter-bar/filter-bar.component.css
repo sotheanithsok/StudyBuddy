@@ -1,0 +1,20 @@
+
+.input-style {
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    font-weight: lighter;
+    
+}
+
+.input-style::placeholder {
+    color: lightgray;
+    font-weight: lighter;
+}
+
+.input-btn-style {
+    background-color: transparent;
+}
+
+.input-btn-style:hover {
+    background-color:white;
+}
