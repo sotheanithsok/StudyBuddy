@@ -12,8 +12,19 @@ export class MainComponent implements OnInit {
   ngOnInit() {
   }
 
+  @ViewChild ('formElement') formElement;
+  public clickedEvent: Event;
+
+  childEventClicked(event: Event) {
+    this.clickedEvent = event;
+}
   startSearch(searchValue:String){
     console.log("Main is starting to search for "+searchValue)
   }
+  openForm(){
+      this.formElement.open();
+    
+  }
+
 
 }

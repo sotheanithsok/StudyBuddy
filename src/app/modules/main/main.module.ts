@@ -7,6 +7,7 @@ import { NavigationBarComponent } from '../../components/navigation-bar/navigati
 import { FilterBarComponent } from '../../components/filter-bar/filter-bar.component';
 import { EventsListComponent } from '../../components/events-list/events-list.component';
 import { EventFormComponent } from '../../components/event-form/event-form.component';
+//import { footerComponent } from '../../components/footer/footer.component';
 
 import { NgbModalModule, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { EventCardComponent } from '../../components/event-card/event-card.component';

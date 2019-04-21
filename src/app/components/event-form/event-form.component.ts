@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { from } from 'rxjs';
+import { Variable, Content } from '@angular/compiler/src/render3/r3_ast';
+
 @Component({
   selector: 'app-event-form',
   templateUrl: './event-form.component.html',
@@ -9,13 +11,18 @@ import { from } from 'rxjs';
 })
 
 export class EventFormComponent implements OnInit {
- 
+
   closeResult: string;
   constructor(private modalService: NgbModal) { }
+  @ViewChild('content') content
+
   ngOnInit() {
   }
-  open(content) {
-    this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
+
+  @Input() showDetails: boolean;
+
+  open() {
+    this.modalService.open(this.content, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
@@ -28,7 +35,7 @@ export class EventFormComponent implements OnInit {
     } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
       return 'by clicking on a backdrop';
     } else {
-      return  `with: ${reason}`;
+      return `with: ${reason}`;
     }
   }
 }
