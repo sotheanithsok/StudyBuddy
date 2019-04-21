@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { MainRoutingModule } from './main-routing.module';
 import { MainComponent } from './main.component';
-import { EventDetailComponent } from '../../components/event-detail/event-detail.component';
 import { NavigationBarComponent } from '../../components/navigation-bar/navigation-bar.component';
 import { FilterBarComponent } from '../../components/filter-bar/filter-bar.component';
 import { EventsListComponent } from '../../components/events-list/events-list.component';
@@ -14,19 +13,25 @@ import { EventCardComponent } from '../../components/event-card/event-card.compo
 
 import { FooterComponent } from '../../components/footer/footer.component';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { TopPanelComponent } from '../../components/top-panel/top-panel.component'
+import { TopPanelComponent } from '../../components/top-panel/top-panel.component';
+import { MajorsComponent } from '../../components/majors/majors.component';
+import { MajorCardComponent } from '../../components/major-card/major-card.component'
 
 
 @NgModule({
-  declarations: [MainComponent,
-     EventDetailComponent, 
-     NavigationBarComponent, 
-     FilterBarComponent, 
-     EventsListComponent, 
-     EventFormComponent, 
-     FooterComponent, 
-     TopPanelComponent, 
-     EventCardComponent],
+  declarations: [
+    MainComponent,
+    NavigationBarComponent, 
+    FilterBarComponent, 
+    EventsListComponent, 
+    EventFormComponent, 
+    FooterComponent, 
+    TopPanelComponent, 
+    EventCardComponent, 
+    MajorsComponent, 
+    MajorCardComponent
+  ],
+
 
   imports: [
     CommonModule,
