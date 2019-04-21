@@ -21,11 +21,8 @@ export class MainComponent implements OnInit {
   startSearch(searchValue:String){
     console.log("Main is starting to search for "+searchValue)
   }
-  openForm(value:boolean){
-    console.log(value);
-    if(value){
+  openForm(){
       this.formElement.open();
-    }
     
   }
 

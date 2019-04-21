@@ -13,14 +13,11 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit() {
   }
 
-  showForm = false;
   @Output()
   onShowForm: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   toggleForm() {
-    this.showForm = !this.showForm;
-    this.onShowForm.emit(this.showForm);
-    console.log('Sidebar Toggle', this.showForm);
+    this.onShowForm.emit();
   }    
 
 
