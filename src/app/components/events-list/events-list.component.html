@@ -1,8 +1,8 @@
-<div class="card-Section">
-  <div class="section-Header">
-    <h4 class="m-0"><strong>For Your Classes</strong></h4>
-    <h6 class="text-muted">Study group sessions that you might be interested based off the classes your enrolled
-    </h6>
+<div class="card-Section mt-5">
+
+  <div class="mb-2 section-Header">
+    <h4 class="m-0">For Your Classes</h4>
+    <p class="text-muted m-0">Study sessions about the classes your enrolled</p>
   </div>
   <div class="card-columns scrolling-wrapper">
     <div *ngFor="let event of recommendedEvents">
@@ -13,11 +13,11 @@
 </div>
 
 
-<div class="card-Section">
-  <div class="section-Header">
-    <h4 class="m-0"><strong>Happening Soon</strong></h4>
-    <h6 class="text-muted">Study group sessions that you might be interested in </h6>
-  </div>
+<div class="card-Section mt-5">
+    <div class="mb-2 section-Header">
+        <h4 class="m-0">Happening Soon</h4>
+        <p class="text-muted m-0">Study sessions that you might be interested in</p>
+    </div>
   <div class="card-columns scrolling-wrapper">
     <div *ngFor="let event of happeningSoonEvents">
       <app-event-card [event]="event"></app-event-card>
@@ -25,14 +25,14 @@
   </div>
 </div>
 
-<div class="card-Section">
-    <div class="section-Header">
-      <h4 class="m-0"><strong>Your Major</strong></h4>
-      <h6 class="text-muted">Study group sessions that related your your major </h6>
+<div class="card-Section mt-5">
+    <div class="mb-2 section-Header">
+        <h4 class="m-0">Your Major</h4>
+        <p class="text-muted m-0">Study sessions that related your major</p>
     </div>
     <div class="card-columns scrolling-wrapper">
       <div *ngFor="let event of yourMajorEvents">
         <app-event-card [event]="event"></app-event-card>
       </div>
     </div>
-  </div>
+</div>
