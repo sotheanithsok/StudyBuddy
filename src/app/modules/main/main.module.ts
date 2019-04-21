@@ -19,7 +19,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
   imports: [
     CommonModule,
     MainRoutingModule,
-    NgbModalModule
+    NgbModalModule,
+    NgbModule
 
   ]
 })
