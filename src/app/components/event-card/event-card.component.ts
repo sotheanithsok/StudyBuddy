@@ -27,7 +27,7 @@ export class EventCardComponent implements OnInit {
       this.title = this.event.title
       this.location = "@" + this.event.location
       this.date = this.timeConverter(this.event.date)
-      this.class = "Class: " + this.event.class;
+      this.class =  this.event.class;
       this.capacity = "Capacity: " + this.event.currentCapacity + "/" + this.event.maxCapacity;
 
     }
