@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgbTypeahead } from '@ng-bootstrap/ng-bootstrap';
-import { Subject, Observable } from 'rxjs';
-import {debounceTime, distinctUntilChanged, filter, map} from 'rxjs/operators';
+import { Component, OnInit, ViewChild, Output, EventEmitter} from '@angular/core';
+import { Observable } from 'rxjs';
+import { debounceTime, distinctUntilChanged, map } from 'rxjs/operators';
+
 const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'California', 'Colorado',
   'Connecticut', 'Delaware', 'District Of Columbia', 'Federated States Of Micronesia', 'Florida', 'Georgia',
   'Guam', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine',
@@ -11,32 +11,41 @@ const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'C
   'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virgin Islands', 'Virginia',
   'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
 
-
 @Component({
   selector: 'app-filter-bar',
   templateUrl: './filter-bar.component.html',
   styleUrls: ['./filter-bar.component.css']
 })
 export class FilterBarComponent implements OnInit {
-  model: any;
+  public suggestedResult = []
 
-  @ViewChild('instance') instance: NgbTypeahead;
-  focus$ = new Subject<string>();
-  click$ = new Subject<string>();
+  public model: any;
 
-  search = (text$: Observable<string>) => {
-    const debouncedText$ = text$.pipe(debounceTime(200), distinctUntilChanged());
-    const clicksWithClosedPopup$ = this.click$.pipe(filter(() => !this.instance.isPopupOpen()));
-    const inputFocus$ = this.focus$;
+  search = (text$: Observable<string>) =>
+    text$.pipe(
+      debounceTime(200),
+      distinctUntilChanged(),
+      map(term => term.length < 1 ? []
+        : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10))
+    )
 
-    return merge(debouncedText$, inputFocus$, clicksWithClosedPopup$).pipe(
-      map(term => (term === '' ? states
-        : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1)).slice(0, 10))
-    );
-  }
+  @ViewChild('inputField') inputElement
+
+  @Output() requestSearch = new EventEmitter<String>();
+
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  searching() {
+    let searchValue:String=this.inputElement.nativeElement.value;
+    if(searchValue.trim().length>0){
+      this.requestSearch.emit(searchValue);
+    }
+
+
   }
 
 }
