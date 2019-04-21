@@ -1,9 +1,7 @@
-<p>
-    events-list works!
-  </p>
+
   <!--<h1>{{title}}</h1> -->
   <!--<button class="btn btn-lg btn-outline-primary" (click)="open()">Post Events</button>-->
-  <ng-template #content let-modal>
+  <ng-template #content let-modal #formElement>
   <div class = "modal-header">
     <h4 class="modal-title" id="modal-basic-title">Please enter the Event Details </h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">

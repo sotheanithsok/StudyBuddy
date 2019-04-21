@@ -1,5 +1,4 @@
-<app-navigation-bar></app-navigation-bar>
-
+<app-navigation-bar (onShowForm)="openForm($event)"></app-navigation-bar>
 
 
 
@@ -11,6 +10,6 @@
 </div>
 
 
-<app-event-form></app-event-form>
+<app-event-form #formElement></app-event-form>
 <app-footer></app-footer>
 

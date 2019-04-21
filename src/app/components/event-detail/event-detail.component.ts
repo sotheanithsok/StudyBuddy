@@ -15,6 +15,7 @@ export class EventDetailComponent implements OnInit {
   ngOnInit() {
   }
 
+  
   //open event-detail modal
   open(content) {
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then(
