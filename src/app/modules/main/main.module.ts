@@ -8,9 +8,10 @@ import { NavigationBarComponent } from '../../components/navigation-bar/navigati
 import { FilterBarComponent } from '../../components/filter-bar/filter-bar.component';
 import { EventsListComponent } from '../../components/events-list/events-list.component';
 import { EventFormComponent } from '../../components/event-form/event-form.component';
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @NgModule({
-  declarations: [MainComponent, EventDetailComponent, NavigationBarComponent, FilterBarComponent, EventsListComponent, EventFormComponent],
+  declarations: [MainComponent, EventDetailComponent, NavigationBarComponent, FilterBarComponent, EventsListComponent, EventFormComponent, FooterComponent],
   imports: [
     CommonModule,
     MainRoutingModule
