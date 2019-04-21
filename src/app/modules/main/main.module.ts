@@ -16,7 +16,8 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { TopPanelComponent } from '../../components/top-panel/top-panel.component';
 import { MajorsComponent } from '../../components/majors/majors.component';
 import { MajorCardComponent } from '../../components/major-card/major-card.component'
-import {NgbDatepickerModule} from "@ng-bootstrap/ng-bootstrap"
+import {NgbDatepickerModule} from "@ng-bootstrap/ng-bootstrap";
+import { BottomPanelComponent } from '../../components/bottom-panel/bottom-panel.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import {NgbDatepickerModule} from "@ng-bootstrap/ng-bootstrap"
     TopPanelComponent, 
     EventCardComponent, 
     MajorsComponent, 
-    MajorCardComponent
+    MajorCardComponent, BottomPanelComponent
   ],
 
 
