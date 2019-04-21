@@ -13,8 +13,7 @@ export class NavigationBarComponent implements OnInit {
   ngOnInit() {
   }
 
-  @Output()
-  onShowForm: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() onShowForm: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   toggleForm() {
     this.onShowForm.emit();
