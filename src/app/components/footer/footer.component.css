@@ -1,0 +1,11 @@
+.custom-footer
+{
+   
+   bottom: 0px;
+   display:block;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   z-index:9;
+   text-align:center;
+   height: 2px;
+}
