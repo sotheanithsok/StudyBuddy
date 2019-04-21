@@ -11,12 +11,13 @@ import { EventFormComponent } from '../../components/event-form/event-form.compo
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { EventCardComponent } from '../../components/event-card/event-card.component';
 
-
 import { FooterComponent } from '../../components/footer/footer.component';
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap"
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { TopPanelComponent } from '../../components/top-panel/top-panel.component'
 
 @NgModule({
-  declarations: [MainComponent, EventDetailComponent, NavigationBarComponent, FilterBarComponent, EventsListComponent, EventFormComponent, FooterComponent, EventCardComponent],
+  declarations: [MainComponent, EventDetailComponent, NavigationBarComponent, FilterBarComponent, EventsListComponent, EventFormComponent, FooterComponent, TopPanelComponent, EventCardComponent],
+
   imports: [
     CommonModule,
     MainRoutingModule,
