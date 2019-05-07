@@ -1,27 +1,25 @@
-# Scheduler
+# StudyBuddy
+A platform for students to easily arrange their own study group or discover study groups.
+This project is built during BeachHacks 2019.
+Check the prototype [here](https://sotheanith.github.io/Scheduler/).  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+screenshots..
 
-## Development server
+## Story
+### Inspiration
+This project is inspired by our personal experience as we are taking some of the most difficult classes offered at CSULB. Over time, the study group meeting has become a necessity if we wish to do well in class and it is obvious that arranging a study session through group text message is inefficient. As such, we design this application in the hope of solving this problem.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### How we built it
+This application is built using Angular and Bootstrap.
 
-## Code scaffolding
+### Challenges we ran into
+As this is the first time our team ever use Angular framework, it was quite a challenge to get this application to work. Routing management, bootstrap, data binding, dynamic content loading and more are some of the topics that we are struggling to wrap our minds around. Nonetheless, we learn a lot.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Accomplishments that we're proud of
+We're content to be able to produce such a good-looking and dynamic web app in this first iteration.
 
-## Build
+### What we learned
+Web-application concept such as state management, routing, and dynamic content generation. Also, we learned how to use Angular framework.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### What's next for StudyBuddy
+Though we are content with the current iteration of our project, we still have a lot of things that we need to do. The immediate plan is to implement our own backend API server and database. Features wise, we plan to implement a login system, direct chat, events' notification, and so on.
