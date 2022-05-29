@@ -27,7 +27,7 @@ Though we are content with the current iteration of our project, we still have a
  - [Angular](https://angular.io/)
  
 ## Authors
- - [Sotheanith Sok](https://github.com/sotheanith)
+ - [Sotheanith Sok](https://github.com/sotheanith-sok)
  - [Yashua Ovando](https://github.com/ydovando)
  - [Jesse Blacklock](https://github.com/jblacklock)
  - [Sella Bae](https://github.com/sellabae)
