@@ -54,8 +54,9 @@ Though we are content with the current iteration of our project, we still have a
 ## Collaborators
 - [Sotheanith Sok]
 - [Yashua Ovando]
-- [Jesse Blacklock]
+- [Sarita Kumari]
 - [Sella Bae]
+- [Praveen Patare]
 
 
 <!-- License -->
@@ -97,5 +98,6 @@ Special thank to
 
 
 [Yashua Ovando]: https://github.com/ydovando
-[Jesse Blacklock]: https://github.com/jblacklock
+[Sarita Kumari]: https://github.com/MeSarita
 [Sella Bae]: https://github.com/sellabae
+[Praveen Patare]: https://github.com/praveen-patare
